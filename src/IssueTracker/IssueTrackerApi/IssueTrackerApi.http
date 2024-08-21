@@ -1,0 +1,25 @@
+@IssueTrackerApi_HostAddress = http://localhost:1337
+
+
+GET {{IssueTrackerApi_HostAddress}}/status
+
+
+### Get the Status
+
+GET http://localhost:1338/support-info
+### Adding an Issue
+
+POST {{IssueTrackerApi_HostAddress}}/issues
+Content-Type: application/json
+
+{
+  "Software": "Destiny 2",
+  "description": "Keep getting insta-killed in crucible",
+  "impact": "Inconvenience"
+  
+}
+
+
+### Get My Issue
+
+GET {{IssueTrackerApi_HostAddress}}/issues
